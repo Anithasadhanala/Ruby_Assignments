@@ -1,25 +1,22 @@
 print("-----------------space:O(1) , time:O(n*minLengthWord)--------------------\n")
 
 
-#finds the minimum size of two strings
-#returns only size
-def min_size(s1,s2)
-    size1 = s1.size
-    size2 = s2.size
+=begin
 
-    if(size1>size2)
-        return size2
-    end
-    return size1
-end
+Write a Program to find the longest common prefix in a given set of strings (Take a maximum of 5 strings as Input)
+Input:
+“apple”, “ape”, “april”
+Output: 
+“ap”
 
+=end 
 
 
 #finds the commonSubsetSize
 #returns the common string
 def findingCommonSubset(s1,s2)
    
-    min_si = min_size(s1,s2)
+    min_si = [s1.size,s2.size].min
     i=0
     common=""
     while(i<min_si)
@@ -34,9 +31,9 @@ def findingCommonSubset(s1,s2)
 end
 
 
-
 #main function
 def main()
+
     size = gets().chomp().to_i
     arr = gets().chomp().split()
 

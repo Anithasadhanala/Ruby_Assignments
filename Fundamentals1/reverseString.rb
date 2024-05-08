@@ -2,6 +2,20 @@ print("-------------space:O(1) returned str is not counted, time: O(n) ---------
 
 
 
+=begin
+
+Write a Program to reverse a string via Recursion and via Loop (there should be two separate functions):
+Input: “ABCD”
+Output:
+Reverse via Recursion: “DCBA”
+Reverse via Loops: “DCBA”
+Please do not use any inbuilt functions provided by Ruby here
+
+=end
+
+
+
+
 #reversed by recursion
 #returns the reversed string
 def reversedByRecursion(str,ind,newStr)
