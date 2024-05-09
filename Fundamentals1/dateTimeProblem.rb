@@ -20,8 +20,8 @@ Please use functions provided by Ruby Date,Time and DateTime classes here
 
 
 #prints the date in different formats
-def getDateTimeFormats(input)
-    dt = DateTime.strptime(input, '%d-%m-%Y %H:%M')
+def getDateTimeFormats(dt)
+   
 
     # Format: Wed, 8 May, 2024
     format1 = dt.strftime('%a, %e %B, %Y')
@@ -42,7 +42,9 @@ end
 #main function
 def main()
     dateInput = gets().chomp()
-    getDateTimeFormats(dateInput)
+    parsedDateTime = DateTime.parse(dateInput)
+
+    getDateTimeFormats(parsedDateTime)
 end
 
 

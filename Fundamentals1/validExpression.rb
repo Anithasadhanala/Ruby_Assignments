@@ -23,7 +23,6 @@ Explanation: Brackets have not been closed properly
 
 
 
-
 #finds if the string contains any alphabets
 #returns boolean
 def contains_alphabets?(str)
