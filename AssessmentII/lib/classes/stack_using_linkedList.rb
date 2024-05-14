@@ -1,10 +1,21 @@
+=begin
+Write a Program to Implement Stack with a Linked List and perform the following operations:
+Push Data
+Pop Data
+Peek Data
+=end
+
+
+
+# importing modules and helper class
 require_relative "../modules/stack_operations"
 require_relative "linked_list"
 
 
-
+# stack class
 class Stack 
 
+    #including module methods
     include StackOperations
 
 
@@ -45,19 +56,26 @@ class Stack
 end
 
 
+
+
+# main function
 def main()
-    puts("--------------------------------------------")
+    puts("-------------------Stack Operations (Linked List)-------------------------")
 
-    puts("Enter 1 for push in stack")
-    puts("Enter 2 for poping out of stack")
-    puts("Enter 3 to get peek element")
-    puts("Enter 0 for exit-----------------")
+    puts("[1] push into stack")
+    puts("[2] oping out of stack")
+    puts("[3] get peek element")
+    puts("[0] exit program")
+    puts("--------------------------------------------------------------------------")
 
 
+    # instance of the stack class
     stack = Stack.new()
 
+
+    # infinite loop, untill user enters [0]
     while(true)
-        puts("Enter your option : ")
+        puts("Enter option : ")
         option = gets().chomp().to_i
 
         case option
@@ -79,16 +97,12 @@ def main()
             puts("Invalid input entered")
         end
 
-        puts("-----------------------------------------")
-
+        puts("-----------------------------------------------------")
     end
-
 end
 
 
-puts("ki")
-
-
+#explicitly calling main
 main()
-puts("ko")
+
 

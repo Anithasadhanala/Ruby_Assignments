@@ -1,17 +1,14 @@
-require_relative '../modules/stack_operations'
-
-
-
-
 =begin
-
 Write a Program to Implement Stack with an Array and perform the following operations:
 Push Data
 Pop Data
 Peek Data
-
 =end
 
+
+
+#imported module
+require_relative '../modules/stack_operations'
 
 
 
@@ -89,6 +86,7 @@ class Stack
         else
             res =  @stack[@top]
         end
+        return res
     end
 end
 
@@ -99,24 +97,27 @@ end
 #main function
 def main()
 
-    puts("--------------------------------------------------")
+    puts("------------------Stack operations (ARRAY)------------------------")
 
     puts("Enter the size of a stack")
     size = gets().chomp().to_i
 
 
-    puts("Enter 1 to push an element")
-    puts("Enter 2 to pop an element")
-    puts("Enter 3 to get peek element")
-    puts("Enter 0 to exit")
-    puts()
+    puts("[1] to push an element")
+    puts("[2] to pop an element")
+    puts("[3] to get peek element")
+    puts("[0] to exit program")
+    puts("-----------------------------------------------------------------")
 
 
     #instance of Stack class
     stack = Stack.new(size)
 
+
+    # infinite loop untill user enter [0] to exit
     while(true)
-        puts("Enter your option : ")
+
+        puts("Enter option : ")
         option = gets().chomp().to_i
 
         case option

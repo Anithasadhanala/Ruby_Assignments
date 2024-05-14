@@ -1,22 +1,21 @@
 
 
-# Acts as an interface to the Stack Class
-module StackOperations
 
-    def peek_element(data)
+# acts as an interface for Queue class
+module QueueOperations
+    def enqueue(element)
         raise NotImplementedError, "Method not implemented"
     end
 
-    def display(data)
+    def display()
         raise NotImplementedError, "Method not implemented"
     end
 
-    def push_element(data)
+    def dequeue()
         raise NotImplementedError, "Method not implemented"
     end
 
-    def pop_element(data)
+    def get_size()
         raise NotImplementedError, "Method not implemented"
     end
-
 end

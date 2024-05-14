@@ -1,3 +1,6 @@
+
+
+# Acts has an interface for LinkedList class
 module LinkedListOperations
 
     def add_at_begin(data)

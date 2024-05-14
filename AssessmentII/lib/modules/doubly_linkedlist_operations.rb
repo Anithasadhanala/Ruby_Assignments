@@ -1,3 +1,6 @@
+
+
+# Acts has an interface for the DoublyLinkedList class
 module DoublyLinkedListOperations
 
     def add_at_begin(data)

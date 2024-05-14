@@ -1,5 +1,3 @@
-require_relative '../modules/doubly_linkedlist_operations'
-
 
 
 =begin
@@ -19,10 +17,14 @@ ENHANCEMENTS :
  2. modular code (scalable)
  3. taken care of edge cases
  
-
 =end
 
 
+
+
+
+#importing from the module
+require_relative '../modules/doubly_linkedlist_operations'
 
 
 #class for creating node
@@ -218,16 +220,17 @@ end
 
 #main function
 def main()
-    print("--------------------------------------------\n")
-    puts("Enter 1 to add node at the beginning")
-    puts("Enter 2 to add node at index i ")
-    puts("Enter 3 to add node at ending")
-    puts("Enter 4 to reverse the nodes")
-    puts("Enter 5 to delete node at the beginning")
-    puts("Enter 6 to delete node at the ending")
-    puts("Enter 7 to delete node at index i")
-    puts("Enter 0 to exit the code\n")
-    puts()
+    print("----------------Doubly Linked List Operations-----------------\n")
+    puts("[1] add at beginning")
+    puts("[2] add node at index i")
+    puts("[3] add node at ending")
+    puts("[4] reverse the nodes")
+    puts("[5] delete node at the beginning")
+    puts("[6] delete node at the ending")
+    puts("[7] delete node at index i")
+    puts("[0] to exit the program\n")
+
+    puts("---------------------------------------------------------------")
 
 
     #instance of the doubly linkedlist class
@@ -236,7 +239,7 @@ def main()
 
     #infinite loop
     while(true)
-        print("Enter your option : ")
+        print("Enter option : ")
         option = gets().chomp().to_i
 
         case option
