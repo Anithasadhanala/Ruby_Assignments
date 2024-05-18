@@ -277,6 +277,3 @@ def main_function()
 
 end
 
-
-#explicitly calling main
-main_function()

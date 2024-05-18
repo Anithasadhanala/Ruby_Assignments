@@ -24,7 +24,7 @@ class Stack
     end
 
 
-    #method that display the stack items
+    # method that display the stack items
     def displaying()
         @stack.display()
     end  
