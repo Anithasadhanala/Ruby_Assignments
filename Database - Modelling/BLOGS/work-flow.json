@@ -1,0 +1,68 @@
+
+
+
+{
+
+    "USERS" : {
+        "register" : "new user register",
+        "login" : "user exists or not"
+    },
+
+
+
+    "BLOGS" : {
+        "create new" : "new blog created",
+        "update blog" : "updated time is added",
+        "thumb nail" : "a new thumb nail added for each blog",
+        "save it " : "a blog can be saved in BLOG_SAVE table",
+        "saved & starred" : "a saved blog can be starred at the client side",
+        "created time" : "blog created time is noted",
+        "share link"  : "a share link is added to each blog",
+        "add image"  : "an image can be added to each blog",
+        "category" : "there is a category for each blog",
+        "created - updated timings" : "created and updated timings are added",
+        "view count" : "no. of users visited is counted"
+    },
+
+
+
+    "REACTIONS" :  {
+        "create new" : "new reaction added ex: like, smile emojis etc",
+        "blog reaction" : "each blog can have reaction for users to react",
+        "comment reaction" : "each comment can have reaction for users to react",
+        "reply reaction" : "a comment can have replies, those replies can have reaction for users to react"
+    },
+
+
+
+    "COMMENTS" : {
+        "create new" : "new comment can be added under each blog",
+        "created - updated timings" : "each comment can be updated and the corresponding time is noted",
+        "user who commented" : "any user can commnet on a specific blog",
+        "reply to comments" : "can reply to others comments",
+        "reaction to a comment" : "can add any reaction for a comment by the other users"
+    },
+
+
+    "REPLY" : {
+        "create new" : "a new reply can be added under a comment",
+        "reaction" : "can react to the reply of a user by the others",
+        "created - updated time" : "can create and update the replies and time is noted."
+    },
+
+
+
+    "TAGS" : {
+        "create new"  : "a ne tag is added like, #technology etc..",
+        "post has tags" : "each post can have the multiple tags"
+
+    },
+
+
+
+    "SAVED_POSTS" : {
+        "save a blog"  : "can save a post by the user",
+        "star a blog" : "saved blog can be starred by the saved user",
+        "saved time"  : "saved time is noted by the users."
+    }
+}
