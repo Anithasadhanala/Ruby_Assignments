@@ -1,4 +1,5 @@
-
+-- ER diagram link
+-- https://lucid.app/lucidchart/1b8f8117-503f-4624-ba8f-54e618694b21/edit?viewport_loc=-1383%2C309%2C1664%2C770%2C0_0&invitationId=inv_9a900b04-1bd7-433b-a36a-e5227fe26b8d
 
 
 
