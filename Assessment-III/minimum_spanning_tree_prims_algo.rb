@@ -14,20 +14,20 @@ class PrimsAlgo
     def prims_mst_algo(graph, vertices)
         key = Array.new(vertices, Float::INFINITY) 
         large = Array.new(vertices, -1)          
-        set = Array.new(vertices, false)      
+        vis = Array.new(vertices, false)      
     
         key[0] = 0     
         large[0] = -1 
     
         (vertices - 1).times do
           
-          u = find_min_key(key, set, vertices)
+          u = find_min_key(key,vis, vertices)
     
-          set[u] = true 
+          vis[u] = true 
     
           
           graph[u].each_with_index do |w, v|
-            if w != 0 && set[v] == false && w < key[v]
+            if w != 0 && vis[v] == false && w < key[v]
                 large[v] = u
               key[v] = w
             end
@@ -39,12 +39,12 @@ class PrimsAlgo
     
      
       # method that finds the min key among vertices
-      def find_min_key(key, set, vertices)
+      def find_min_key(key, vis, vertices)
         min = Float::INFINITY
         min_index = -1
     
         vertices.times do |v|
-          if set[v] == false && key[v] < min
+          if vis[v] == false && key[v] < min
             min = key[v]
             min_index = v
           end

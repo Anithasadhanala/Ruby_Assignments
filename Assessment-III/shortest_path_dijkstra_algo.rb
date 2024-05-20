@@ -14,6 +14,22 @@ class Dijkstra
     end
 
     
+    # method that finds min distance and returns its index
+    def min_distance(dis, vis)
+        mini = Float::INFINITY
+        min_index = -1
+
+        @vertices.times do |v|
+        if !vis[v] && dis[v] <= mini
+            mini = dis[v]
+            min_index = v
+        end
+        end
+
+        min_index
+    end
+
+
     # method that finds shortest path
     def shortest_path(start_vertex)
         dis = Array.new(@vertices, Float::INFINITY)  
@@ -35,20 +51,6 @@ class Dijkstra
     end
     
       
-    # method that finds min distance and returns its index
-    def min_distance(dis, vis)
-        mini = Float::INFINITY
-        min_index = -1
-
-        @vertices.times do |v|
-        if !vis[v] && dis[v] <= mini
-            mini = dis[v]
-            min_index = v
-        end
-        end
-
-        min_index
-    end
     
 
     # method that prints the result
